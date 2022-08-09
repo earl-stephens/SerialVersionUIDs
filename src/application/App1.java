@@ -6,26 +6,6 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-class Person implements Serializable {
-	/* have to have the interface if going to use
-	 * serialization
-	 * Use the transient keyword to stop a field from
-	 * being serialized.
-	 */
-	private String name;
-	private int id;
-	
-	public Person(String name, int id) {
-		this.name = name;
-		this.id = id;
-	}
-
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", id=" + id + "]";
-	}
-}
-
 public class App1 {
 
 	public static void main(String[] args) {
